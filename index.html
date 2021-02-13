@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="KEPEK/js.png" type="image/png">
+    <link rel="stylesheet" href="stilus.css">
+    <title>JS ALAPOK</title>
+</head>
+<body class="bg-primary bg-gradient mt-1 pt-3">
+    <div id="oldal" class="container container-fluid-sm bg-gradient" >
+    <header>
+        <h2 class="text-center">Mit tud a Java script?</h2>
+        <button onclick="alert('Besenyei Bendegúz')" class="btn-block bg-danger text-white">Szerző</button>
+        <button onclick="window.print()" class="btn-block bg-danger text-white">Oldal nyomtatása</button>
+        <br>
+        <button onclick="sotetmod()" class="btn-block bg-danger text-white">Sötétmód</button>
+        <button onclick="vilmod()"  class="btn-block bg-danger text-white">Világosmód</button>
+        <br>
+        <button class=" bg-danger text-white btn-sm" type="button"onclick="document.getElementById('demo').innerHTML = Date()">
+            Mai dátum és idő megjelenitése
+        </button>
+        <button class="bg-danger text-white btn-sm" type="button"onclick="document.getElementById('demo').innerHTML = ''">
+            Dátum törlése
+        </button>
+        <p id="demo"></p>
+        <button class=" bg-danger text-white btn-sm"onclick="document.getElementById('Vilany körte').src='KEPEK/pic_bulbon.gif'">Kapcsold fel</button>
+        <img id="Vilany körte" src="KEPEK/pic_bulboff.gif " src="" style="width:100px">
+        <button class=" bg-danger text-white btn-sm" onclick="document.getElementById('Vilany körte').src='KEPEK/pic_bulboff.gif'">Kapcsold le</button>
+        <br>
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" target="_blank"><img src="kepek/w3kicsi.PNG" alt="" class="border border-danger"></a>
+        <p></p>
+
+        <h2>JavaScript megváltoztatja a HTML elemek stilusát.</h2>
+        
+        <p id="alap">Megváltoztathatod a bekezdésed kinézetét.</p>
+
+        <button class=" bg-danger text-white btn-sm" type="button" onclick="document.getElementById('alap').style.fontSize='35px'">Betűméret</button>
+        <button class=" bg-danger text-white btn-sm" type="button" onclick="document.getElementById('alap').style.color='red'">Betűszín</button>
+        <button class=" bg-danger text-white btn-sm" type="button" onclick="document.getElementById('alap').style.fontFamily='Verdana'">Betűtipus</button>
+        <button class=" bg-danger text-white btn-sm" type="button" onclick="document.getElementById('alap').style.border='10px'">Szegély</button>
+        <button class=" bg-danger text-white btn-sm" type="button" onclick="document.getElementById('alap').style.padding='10px'">Belső margó</button>
+        <button class=" bg-danger text-white btn-sm" type="button" onclick="document.getElementById('alap').style.margin='30px auto'">külső margó</button>
+        <button class=" bg-danger text-white btn-sm" type="button" onclick="document.getElementById('alap').style.background='black'">Háttér</button>
+        <br>
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank"><img src="kepek/w3kicsi.PNG" alt="" class="border border-danger"></a>
+        
+    
+    </div>
+
+</header>
+<script>
+    function sotetmod(){
+        document.getElementById('oldal').style.backgroundColor='black';
+        document.getElementById('oldal').style.Color='white';
+    }
+    function vilmod(){
+        document.getElementById('oldal').style.backgroundColor='white';
+        document.getElementById('oldal').style.Color='black';
+    }
+</script>
+
+    
+</body>
+</html>
